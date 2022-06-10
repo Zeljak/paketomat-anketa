@@ -266,6 +266,8 @@ input[type=submit]:checked {
   font-size: 14px;
   line-height: 1.79;
   color: #eb0a0a;
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 #error-msg {
@@ -274,6 +276,11 @@ input[type=submit]:checked {
   line-height: 1.79;
   color: #eb0a0a;
   margin-top: -50px;
+}
+
+.error_border {
+  border: solid 1px #eb0a0a;
+  padding: 30px;
 }
 
 .footer {
@@ -313,7 +320,6 @@ input[type=submit]:checked {
   line-height: 1.13;
   text-align: left;
   color: #eb0a0a;
-  margin-top: 80px;
 }
 .form__question--textarea {
   font-family: "Bebas Neue", cursive;
@@ -335,7 +341,6 @@ input[type=submit]:checked {
   font-size: 20px;
   line-height: 1.25;
   color: #eb0a0a;
-  margin-top: 80px;
 }
 .form__text {
   font-family: "Roboto", sans-serif;
@@ -371,6 +376,15 @@ input[type=submit]:checked {
 .form__gdpr a:hover {
   color: #970909;
   text-decoration: underline;
+}
+
+.pitanje_1__wrapper,
+.pitanje_2__wrapper,
+.pitanje_3__wrapper,
+.pitanje_4__wrapper,
+.pitanje_5__wrapper,
+.pitanje_6__wrapper {
+  margin-top: 80px;
 }
 
 .header__main-photo {

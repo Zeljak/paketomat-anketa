@@ -12,7 +12,6 @@
     line-height: 1.13;
     text-align: left;
     color: $color-red;
-    margin-top: 80px;
 
     &--textarea {
       font-family: $family-primary;
@@ -37,7 +36,6 @@
     font-size: 20px;
     line-height: 1.25;
     color: $color-red;
-    margin-top: 80px;
   }
 
   &__text {
@@ -82,4 +80,13 @@
       text-decoration: underline;
     }
   }
+}
+
+.pitanje_1__wrapper,
+.pitanje_2__wrapper,
+.pitanje_3__wrapper,
+.pitanje_4__wrapper,
+.pitanje_5__wrapper,
+.pitanje_6__wrapper {
+  margin-top: 80px;
 }

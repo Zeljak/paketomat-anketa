@@ -28,6 +28,8 @@
   font-size: 14px;
   line-height: 1.79;
   color: $color-red;
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 #error-msg {
@@ -36,4 +38,9 @@
   line-height: 1.79;
   color: $color-red;
   margin-top: -50px;
+}
+
+.error_border {
+  border: solid 1px $color-red;
+  padding: 30px;
 }
