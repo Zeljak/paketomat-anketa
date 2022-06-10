@@ -1,0 +1,24 @@
+@use "../utilities" as *;
+@use "../base/typography" as *;
+
+.footer {
+  background-color: $color-grey !important;
+
+  p {
+    font-family: $family-third;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.17;
+    letter-spacing: 0.88px;
+    text-align: center;
+    color: white;
+    margin-bottom: 31px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 76px;
+  }
+}

@@ -1,0 +1,60 @@
+@use "../utilities/" as *;
+@use "../base/" as *;
+
+.wrapper {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+  background-color: white;
+  padding-top: 84px;
+  margin-top: -6px;
+
+  &__text {
+    font-family: $family-primary;
+    color: $color-grey;
+    text-align: center;
+
+    h2 {
+      font-size: 50px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 46px;
+
+      span {
+        border-bottom: 4px solid $color-yellow;
+      }
+    }
+
+    p {
+      font-family: $family-secondary;
+      font-size: 20px;
+      line-height: 1.7;
+      padding-left: 150px;
+      padding-right: 150px;
+      margin-bottom: 124px;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    a {
+      color: $color-red;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: $color-red-dark;
+      text-decoration: underline;
+    }
+  }
+}
+
+.rectangle {
+  height: 110px;
+  width: 100%;
+  background-color: $color-yellow;
+}

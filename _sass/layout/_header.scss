@@ -1,0 +1,16 @@
+@use "../utilities/" as *;
+@use "../base/" as *;
+
+.header {
+  &__main-photo {
+    position: relative;
+    display: inline;
+  }
+
+  &__second-photo {
+    position: absolute;
+    top: 0;
+    left: 360px;
+    max-width: 21.13%;
+  }
+}

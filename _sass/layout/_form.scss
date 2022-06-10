@@ -1,0 +1,85 @@
+@use "../utilities/" as *;
+@use "../base/" as *;
+
+.form {
+  max-width: 530px;
+  display: block;
+  margin: 0 auto;
+
+  &__question {
+    font-family: $family-primary;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: left;
+    color: $color-red;
+    margin-top: 80px;
+
+    &--textarea {
+      font-family: $family-primary;
+      font-size: 30px;
+      line-height: 1.13;
+      text-align: left;
+      color: $color-red;
+      margin: 15px 0;
+    }
+  }
+
+  hr {
+    width: 100%;
+    height: 7px;
+    background-color: $color-yellow;
+    margin-top: 7px;
+    margin-bottom: 23px;
+  }
+
+  h4 {
+    font-family: $family-secondary;
+    font-size: 20px;
+    line-height: 1.25;
+    color: $color-red;
+    margin-top: 80px;
+  }
+
+  &__text {
+    font-family: $family-secondary;
+    font-size: 16px;
+    line-height: 1.75;
+    color: $color-grey;
+    margin-top: 80px;
+
+    span {
+      font-weight: bold;
+    }
+
+    .date {
+      margin-top: 15px;
+    }
+
+    a {
+      color: $color-red;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: $color-red-dark;
+      text-decoration: underline;
+    }
+  }
+
+  &__gdpr {
+    font-family: $family-secondary;
+    font-size: 14px;
+    line-height: 1.79;
+    color: $color-grey;
+
+    a {
+      color: $color-red;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: $color-red-dark;
+      text-decoration: underline;
+    }
+  }
+}

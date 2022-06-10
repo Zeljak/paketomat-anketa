@@ -1,0 +1,39 @@
+@use "../utilities/variables" as *;
+@use "../base/typography" as *;
+
+.response-msg-wrapper {
+  width: 521px;
+  height: 113px;
+  background-color: rgba(33, 229, 3, 0.1);
+  font-family: $family-secondary;
+  font-size: 19px;
+  line-height: 1.47;
+  text-align: center;
+  color: #21e503;
+  border: solid 2px #21e503;
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form__error-msg--spol,
+#form__error-msg--godine,
+#form__error-msg--primanje,
+#form__error-msg--dostava,
+#form__error-msg--kandidat,
+#form__error-msg--email {
+  font-family: $family-secondary;
+  font-size: 14px;
+  line-height: 1.79;
+  color: $color-red;
+}
+
+#error-msg {
+  font-family: $family-secondary;
+  font-size: 14px;
+  line-height: 1.79;
+  color: $color-red;
+  margin-top: -50px;
+}

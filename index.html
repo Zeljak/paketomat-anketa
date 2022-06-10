@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-16" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Paketomat24 | Osvoji bon od 1000kn!</title>
+    <meta name="title" content="Paketomat24 nagradna anketa" />
+    <meta
+      name="description"
+      content="Ispuni anketu i osvoji žutiklik.hr poklon bon od 1000 kn"
+    />
+    <link rel="stylesheet" href="css/main.css?v=4" />
+
+    <!-- Facebook -->
+    <meta
+      property="og:url"
+      content="https://native.story.hr/preview/paketomat-anketa/"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Paketomat24 nagradna anketa" />
+    <meta
+      property="og:description"
+      content="Paketomat24 | Osvoji bon od 1000kn!"
+    />
+    <meta
+      property="og:image"
+      content="https://native.story.hr/preview/paketomat-anketa/share.jpg"
+    />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="fb:app_id" content="684146431996498" />
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/images/favicon-32x32.png"
+      sizes="32x32"
+    />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-267402-38"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-267402-38");
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <picture class="header__main-photo">
+          <source
+            srcset="./assets/Paketomat_big-tablet-1536x790.png"
+            media="(min-width: 768px) AND (max-width: 1024px)"
+          />
+          <source
+            srcset="./assets/Paketomat_big-tablet-1536x790.png"
+            media="(min-width: 1025px) AND (max-width: 1550px)"
+          />
+          <source
+            srcset="./assets/Paketomat_desktop-1920x600.png"
+            media="(min-width: 1551px) AND (max-width: 1920px)"
+          />
+          <source
+            srcset="./assets/Paketomat_big-desktop-3840x1200.png"
+            media="(min-width: 1921px)"
+          />
+          <img
+            src="./assets/Paketomat_big-tablet-1536x790.png"
+            alt="Paketomat24"
+          />
+        </picture>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrapper">
+        <div class="wrapper__text">
+          <h2>Voliš dobivati pakete?</h2>
+          <h1>
+            Ispuni anketu i osvoji
+            <span>Žutiklik.hr poklon bon od 1000 kn</span>
+          </h1>
+          <p>
+            Održiv način života sve nam je važniji: bilo da štedimo vrijeme,
+            prirodne resurse, povezujemo hrvatske regije ili povezujemo ljude.
+            Upravo stoga -
+            <a href="https://story.hr/" target="_blank">Story.hr</a> i usluga
+            <a href="https://www.posta.hr/paket24/5286">Paket24</a> - „pakiraju“
+            sasvim poseban <span>Star Paket24</span> koji stiže na Paketomat u
+            vaš kvart kako biste živjeli lakše, održivije te bili povezaniji sa
+            svojim najmilijima gdje god bili - u bilo koje doba dana.
+          </p>
+        </div>
+
+        <form id="paketomat_obrazac" class="form">
+          <!-- Pitanje - 1 SPOL-->
+          <div class="pitanje_1__wrapper">
+            <h3 class="form__question">Ti si:</h3>
+            <hr />
+            <!-- Odgovor A -->
+            <label
+              for="pitanje1_odgovor_A"
+              class="button__label radio__wrapper"
+            >
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="pitanje1_odgovor_A"
+                  name="pitanje_1"
+                  value="A"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              Žena
+            </label>
+            <!-- Odgovor B -->
+            <label
+              for="pitanje1_odgovor_B"
+              class="button__label radio__wrapper"
+            >
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="pitanje1_odgovor_B"
+                  name="pitanje_1"
+                  value="B"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              Muškarac
+            </label>
+          </div>
+
+          <!-- Error message -->
+          <h6 class="is-hidden form__error-msg" id="form__error-msg--spol">
+            *Ovo polje je obavezno!
+          </h6>
+
+          <!-- Pitanje 2 - GODINE-->
+          <div class="pitanje_2__wrapper">
+            <h3 class="form__question">Koliko imaš godina?</h3>
+            <hr />
+            <!-- Odgovor A -->
+            <label
+              for="pitanje2_odgovor_A"
+              class="button__label radio__wrapper"
+            >
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="pitanje2_odgovor_A"
+                  name="pitanje_2"
+                  value="A"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              Manje od 20
+            </label>
+            <!-- Odgovor B -->
+            <label
+              for="pitanje2_odgovor_B"
+              class="button__label radio__wrapper"
+            >
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="pitanje2_odgovor_B"
+                  name="pitanje_2"
+                  value="B"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              21-30
+            </label>
+            <!-- Odgovor C -->
+            <label
+              for="pitanje2_odgovor_C"
+              class="button__label radio__wrapper"
+            >
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="pitanje2_odgovor_C"
+                  name="pitanje_2"
+                  value="C"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              31-40
+            </label>
+            <!-- Odgovor D -->
+            <label
+              for="pitanje2_odgovor_D"
+              class="button__label radio__wrapper last__answer"
+            >
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="pitanje2_odgovor_D"
+                  name="pitanje_2"
+                  value="D"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              Više od 40
+            </label>
+          </div>
+
+          <!-- Error message -->
+          <h6 class="is-hidden form__error-msg" id="form__error-msg--godine">
+            *Ovo polje je obavezno!
+          </h6>
+
+          <!-- Pitanje 3 - VOLIŠ DA TI PAKET STIGNE-->
+          <div class="pitanje_3__wrapper">
+            <h3 class="form__question">Voliš kada ti paket stigne:</h3>
+            <hr />
+            <!-- Odgovor A -->
+            <label
+              for="pitanje3_odgovor_A"
+              class="button__label radio__wrapper"
+            >
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="pitanje3_odgovor_A"
+                  name="pitanje_3"
+                  value="A"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              Na kućni prag jer si stalno kod kuće
+            </label>
+            <!-- Odgovor B -->
+            <label
+              for="pitanje3_odgovor_B"
+              class="button__label radio__wrapper"
+            >
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="pitanje3_odgovor_B"
+                  name="pitanje_3"
+                  value="B"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              Na Paketomat jer paket možeš podići od 0-24 (jer nisi stalno kod
+              kuće)
+            </label>
+            <!-- Odgovor C -->
+            <label
+              for="pitanje3_odgovor_C"
+              class="button__label radio__wrapper"
+            >
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="pitanje3_odgovor_C"
+                  name="pitanje_3"
+                  value="C"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              U poštanski ured
+            </label>
+          </div>
+
+          <!-- Error message -->
+          <h6 class="is-hidden form__error-msg" id="form__error-msg--primanje">
+            *Ovo polje je obavezno!
+          </h6>
+
+          <!-- Pitanje 4 - KOD DOSTAVE TI JE VAŽNO-->
+          <div class="pitanje_4__wrapper">
+            <h3 class="form__question">Kod dostave paketa važno ti je:</h3>
+            <hr />
+            <!-- Odgovor A -->
+            <label
+              for="pitanje4_odgovor_A"
+              class="button__label radio__wrapper"
+            >
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="pitanje4_odgovor_A"
+                  name="pitanje_4"
+                  value="A"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              Da ga možeš podignuti bilo kada i bilo gdje se nalazio
+            </label>
+            <!-- Odgovor B -->
+            <label
+              for="pitanje4_odgovor_B"
+              class="button__label radio__wrapper"
+            >
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="pitanje4_odgovor_B"
+                  name="pitanje_4"
+                  value="B"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              Da ti paket dođe brzo, unutar 24 sata
+            </label>
+            <!-- Odgovor C -->
+            <label
+              for="pitanje4_odgovor_C"
+              class="button__label radio__wrapper"
+            >
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="pitanje4_odgovor_C"
+                  name="pitanje_4"
+                  value="C"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              Da dođe neoštećen
+            </label>
+            <!-- Odgovor D -->
+            <label
+              for="pitanje4_odgovor_D"
+              class="button__label radio__wrapper last__answer"
+            >
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="pitanje4_odgovor_D"
+                  name="pitanje_4"
+                  value="D"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              Da možeš preusmjeriti mjesto i vrijeme dostave
+            </label>
+          </div>
+
+          <!-- Error message -->
+          <h6 class="is-hidden form__error-msg" id="form__error-msg--dostava">
+            *Ovo polje je obavezno!
+          </h6>
+
+          <!-- Pitanje 5 - ZAŠTO BAŠ TI ZASLUŽUJEŠ NAGRADU -->
+          <div class="pitanje_5_wrapper">
+            <h4>Pitanje za kreativni natječaj</h4>
+            <h3 class="form__question--textarea">
+              Opiši nam sadržaj svog savršenog paketa i reci zašto bi te baš to
+              razveselilo:
+            </h3>
+            <textarea
+              name="zasto_idealan_kandidat"
+              id="zasto_idealan_kandidat"
+              maxlength="1200"
+              placeholder="Unesite opis od najviše 1200 znakova"
+            ></textarea>
+          </div>
+
+          <!-- Error message -->
+          <h6 class="is-hidden form__error-msg" id="form__error-msg--kandidat">
+            *Ovo polje je obavezno!
+          </h6>
+
+          <!-- E-MAIL - -->
+          <div class="pitanje_5_wrapper">
+            <h3 class="form__question">I za kraj, vaš email:</h3>
+            <textarea
+              class="email"
+              name="email"
+              id="email"
+              placeholder="Upišite e-mail adresu"
+            ></textarea>
+          </div>
+
+          <!-- Error message -->
+          <h6 class="is-hidden form__error-msg" id="form__error-msg--email">
+            *Ovo polje je obavezno!
+          </h6>
+
+          <!-- Napomena -->
+          <div class="form__text">
+            <p>
+              <span>Napomena:</span> pet najkreativnija odgovora nagrađujemo s
+              bogatim <span>Star Paketom24</span> u kojem se nalazi kozmetika i
+              <a href=" https://zutiklik.hr/" target="_blank">Žutiklik.hr</a>
+              poklon bon od 1000 kn.
+            </p>
+            <p class="date">
+              U anketu se možete uključiti od 15. lipnja do 1.srpnja 2022.
+            </p>
+          </div>
+
+          <!-- GDPR checkbox -->
+
+          <label class="form__gdpr containerr" for="gdpr">
+            &nbsp;&nbsp;Prihvaćam
+            <a
+              href="http://www.adriamedia.hr/politika-privatnosti/"
+              target="_blank"
+              >pravila privatnosti AMZ-a
+            </a>
+            i
+            <a
+              href="https://story.hr/Preview-NEWS/a215766/Pravila-kreativnog-natjecaja-Star-Paket24-Sreca-te-ceka-u-Paketomatu-u-tvom-kvartu.html"
+              target="_blank"
+            >
+              pravila natječaja</a
+            >
+            <input type="checkbox" id="gdpr" name="gdpr" value="prihvacam" />
+            <span class="checkmark gdpr_checkmark"></span>
+          </label>
+
+          <h6 class="is-hidden" id="error-msg" class="">
+            Morate prihvatiti pravila privatnosti i pravila natječaja!
+          </h6>
+
+          <!-- submit button -->
+          <div>
+            <input
+              type="submit"
+              id="form__submit"
+              class="form__button"
+              value="Pošalji"
+            />
+          </div>
+          <div class="response-msg-wrapper is-hidden has-text-centered">
+            <h6 class="is-hidden has-text-centered" id="response-msg">
+              Vaša prijava uspješno je poslana. Hvala na sudjelovanju!
+            </h6>
+          </div>
+
+          <!-- Messages and loading -->
+          <div class="is-flex is-justify-content-center">
+            <div id="loading-indicator" class="is-hidden lds-ripple">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="rectangle">.</div>
+    </main>
+    <!--  FOOTER -->
+    <footer class="footer">
+      <p>Sadržaj nastao u suradnji</p>
+      <div class="footer__logo">
+        <img src="./assets/AMZ_logo.png" alt="AMZ logo" />
+        <img src="./assets/logo-hrvatska-posta.png" alt="Logo Hrvatska pošta" />
+      </div>
+    </footer>
+
+    <!-- Main -->
+    <script type="text/javascript" src="lib/main.js?v=1"></script>
+  </body>
+</html>
