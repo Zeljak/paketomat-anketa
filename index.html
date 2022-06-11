@@ -67,6 +67,10 @@
 
       gtag("config", "UA-267402-38");
     </script>
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="lib/jquery.serialize-object.min.js"></script>
   </head>
 
   <body>
@@ -119,20 +123,20 @@
 
         <form id="paketomat_obrazac" class="form">
           <!-- Pitanje - 1 SPOL-->
-          <div class="pitanje_1__wrapper error_border">
+          <div class="pitanje_1__wrapper">
             <h3 class="form__question">Ti si:</h3>
             <hr />
             <!-- Odgovor A -->
             <label
-              for="pitanje1_odgovor_A"
+              for="zena"
               class="button__label radio__wrapper"
             >
               <span class="radio__input">
                 <input
                   type="radio"
-                  id="pitanje1_odgovor_A"
-                  name="pitanje_1"
-                  value="A"
+                  id="zena"
+                  name="spol"
+                  value="zena"
                   class="form__answer"
                 />
                 <span class="radio__control"></span>
@@ -141,15 +145,15 @@
             </label>
             <!-- Odgovor B -->
             <label
-              for="pitanje1_odgovor_B"
+              for="muskarac"
               class="button__label radio__wrapper"
             >
               <span class="radio__input">
                 <input
                   type="radio"
-                  id="pitanje1_odgovor_B"
-                  name="pitanje_1"
-                  value="B"
+                  id="muskarac"
+                  name="spol"
+                  value="muskarac"
                   class="form__answer"
                 />
                 <span class="radio__control"></span>
@@ -164,20 +168,20 @@
           </h6>
 
           <!-- Pitanje 2 - GODINE-->
-          <div class="pitanje_2__wrapper error_border">
+          <div class="pitanje_2__wrapper">
             <h3 class="form__question">Koliko imaš godina?</h3>
             <hr />
             <!-- Odgovor A -->
             <label
-              for="pitanje2_odgovor_A"
+              for="manje_od_20"
               class="button__label radio__wrapper"
             >
               <span class="radio__input">
                 <input
                   type="radio"
-                  id="pitanje2_odgovor_A"
-                  name="pitanje_2"
-                  value="A"
+                  id="manje_od_20"
+                  name="godine"
+                  value="manje od 20"
                   class="form__answer"
                 />
                 <span class="radio__control"></span>
@@ -186,15 +190,15 @@
             </label>
             <!-- Odgovor B -->
             <label
-              for="pitanje2_odgovor_B"
+              for="21_do_30"
               class="button__label radio__wrapper"
             >
               <span class="radio__input">
                 <input
                   type="radio"
-                  id="pitanje2_odgovor_B"
-                  name="pitanje_2"
-                  value="B"
+                  id="21_do_30"
+                  name="godine"
+                  value="21 do 30"
                   class="form__answer"
                 />
                 <span class="radio__control"></span>
@@ -203,15 +207,15 @@
             </label>
             <!-- Odgovor C -->
             <label
-              for="pitanje2_odgovor_C"
+              for="31_do_40"
               class="button__label radio__wrapper"
             >
               <span class="radio__input">
                 <input
                   type="radio"
-                  id="pitanje2_odgovor_C"
-                  name="pitanje_2"
-                  value="C"
+                  id="31_do_40"
+                  name="godine"
+                  value="31 do 40"
                   class="form__answer"
                 />
                 <span class="radio__control"></span>
@@ -220,15 +224,15 @@
             </label>
             <!-- Odgovor D -->
             <label
-              for="pitanje2_odgovor_D"
+              for="vise_od_40"
               class="button__label radio__wrapper last__answer"
             >
               <span class="radio__input">
                 <input
                   type="radio"
-                  id="pitanje2_odgovor_D"
-                  name="pitanje_2"
-                  value="D"
+                  id="vise_od_40"
+                  name="godine"
+                  value="vise od 40"
                   class="form__answer"
                 />
                 <span class="radio__control"></span>
@@ -243,20 +247,20 @@
           </h6>
 
           <!-- Pitanje 3 - VOLIŠ DA TI PAKET STIGNE-->
-          <div class="pitanje_3__wrapper error_border">
+          <div class="pitanje_3__wrapper">
             <h3 class="form__question">Voliš kada ti paket stigne:</h3>
             <hr />
             <!-- Odgovor A -->
             <label
-              for="pitanje3_odgovor_A"
+              for="na_kucni_prag"
               class="button__label radio__wrapper"
             >
               <span class="radio__input">
                 <input
                   type="radio"
-                  id="pitanje3_odgovor_A"
-                  name="pitanje_3"
-                  value="A"
+                  id="na_kucni_prag"
+                  name="volis_paket_gdje"
+                  value="na kucni prag"
                   class="form__answer"
                 />
                 <span class="radio__control"></span>
@@ -265,15 +269,15 @@
             </label>
             <!-- Odgovor B -->
             <label
-              for="pitanje3_odgovor_B"
+              for="na_paketomat"
               class="button__label radio__wrapper"
             >
               <span class="radio__input">
                 <input
                   type="radio"
-                  id="pitanje3_odgovor_B"
-                  name="pitanje_3"
-                  value="B"
+                  id="na_paketomat"
+                  name="volis_paket_gdje"
+                  value="na paketomat"
                   class="form__answer"
                 />
                 <span class="radio__control"></span>
@@ -283,15 +287,15 @@
             </label>
             <!-- Odgovor C -->
             <label
-              for="pitanje3_odgovor_C"
+              for="u_postanski_ured"
               class="button__label radio__wrapper"
             >
               <span class="radio__input">
                 <input
                   type="radio"
-                  id="pitanje3_odgovor_C"
-                  name="pitanje_3"
-                  value="C"
+                  id="u_postanski_ured"
+                  name="volis_paket_gdje"
+                  value="u postanski ured"
                   class="form__answer"
                 />
                 <span class="radio__control"></span>
@@ -306,20 +310,20 @@
           </h6>
 
           <!-- Pitanje 4 - KOD DOSTAVE TI JE VAŽNO-->
-          <div class="pitanje_4__wrapper error_border">
+          <div class="pitanje_4__wrapper">
             <h3 class="form__question">Kod dostave paketa važno ti je:</h3>
             <hr />
             <!-- Odgovor A -->
             <label
-              for="pitanje4_odgovor_A"
+              for="podignuti_bilo_kad_gdje"
               class="button__label radio__wrapper"
             >
               <span class="radio__input">
                 <input
                   type="radio"
-                  id="pitanje4_odgovor_A"
-                  name="pitanje_4"
-                  value="A"
+                  id="podignuti_bilo_kad_gdje"
+                  name="kod_dostave_vazno"
+                  value="mozes podignuti bilo kada bilo gdje"
                   class="form__answer"
                 />
                 <span class="radio__control"></span>
@@ -328,15 +332,15 @@
             </label>
             <!-- Odgovor B -->
             <label
-              for="pitanje4_odgovor_B"
+              for="brz_dolazak"
               class="button__label radio__wrapper"
             >
               <span class="radio__input">
                 <input
                   type="radio"
-                  id="pitanje4_odgovor_B"
-                  name="pitanje_4"
-                  value="B"
+                  id="brz_dolazak"
+                  name="kod_dostave_vazno"
+                  value="brz dolazak do 24h"
                   class="form__answer"
                 />
                 <span class="radio__control"></span>
@@ -345,15 +349,15 @@
             </label>
             <!-- Odgovor C -->
             <label
-              for="pitanje4_odgovor_C"
+              for="neostecen"
               class="button__label radio__wrapper"
             >
               <span class="radio__input">
                 <input
                   type="radio"
-                  id="pitanje4_odgovor_C"
-                  name="pitanje_4"
-                  value="C"
+                  id="neostecen"
+                  name="kod_dostave_vazno"
+                  value="stigne neostecen"
                   class="form__answer"
                 />
                 <span class="radio__control"></span>
@@ -362,15 +366,15 @@
             </label>
             <!-- Odgovor D -->
             <label
-              for="pitanje4_odgovor_D"
+              for="preusmjeriti"
               class="button__label radio__wrapper last__answer"
             >
               <span class="radio__input">
                 <input
                   type="radio"
-                  id="pitanje4_odgovor_D"
-                  name="pitanje_4"
-                  value="D"
+                  id="preusmjeriti"
+                  name="kod_dostave_vazno"
+                  value="mozes preusmjeriti dostavu"
                   class="form__answer"
                 />
                 <span class="radio__control"></span>
@@ -385,15 +389,15 @@
           </h6>
 
           <!-- Pitanje 5 - ZAŠTO BAŠ TI ZASLUŽUJEŠ NAGRADU -->
-          <div class="pitanje_5__wrapper error_border">
+          <div class="pitanje_5__wrapper">
             <h4>Pitanje za kreativni natječaj</h4>
             <h3 class="form__question--textarea">
               Opiši nam sadržaj svog savršenog paketa i reci zašto bi te baš to
               razveselilo:
             </h3>
             <textarea
-              name="zasto_idealan_kandidat"
-              id="zasto_idealan_kandidat"
+              name="opis_savrsenog_paketa"
+              id="opis_savrsenog_paketa"
               maxlength="1200"
               placeholder="Unesite opis od najviše 1200 znakova"
             ></textarea>
@@ -405,7 +409,7 @@
           </h6>
 
           <!-- E-MAIL - -->
-          <div class="pitanje_6__wrapper error_border">
+          <div class="pitanje_6__wrapper">
             <h3 class="form__question">I za kraj, vaš email:</h3>
             <textarea
               class="email"
@@ -458,13 +462,16 @@
           </h6>
 
           <!-- submit button -->
-          <div>
+          <div class="submit__wrapper">
             <input
               type="submit"
               id="form__submit"
               class="form__button"
               value="Pošalji"
             />
+            <h6 class="is-hidden has-text-centered" id="form__error-msg--form">
+              Ups! Niste ispunili cijeli formular!
+            </h6>
           </div>
           <div class="response-msg-wrapper is-hidden has-text-centered">
             <h6 class="is-hidden has-text-centered" id="response-msg">

@@ -23,7 +23,8 @@
 #form__error-msg--primanje,
 #form__error-msg--dostava,
 #form__error-msg--kandidat,
-#form__error-msg--email {
+#form__error-msg--email,
+#form__error-msg--form {
   font-family: $family-secondary;
   font-size: 14px;
   line-height: 1.79;
@@ -43,4 +44,8 @@
 .error_border {
   border: solid 1px $color-red;
   padding: 30px;
+}
+
+.error_border_box {
+  border: solid 1px $color-red;
 }
