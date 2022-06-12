@@ -33,13 +33,9 @@ body {
 }
 @media (max-width: 767px) {
   .radio__wrapper {
-    padding: 0 30px;
-  }
-}
-@media (max-width: 1024px) {
-  .radio__wrapper {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    grid-gap: 15px;
   }
 }
 .radio__input {
@@ -51,12 +47,12 @@ body {
 }
 @media (max-width: 767px) {
   .radio__input {
-    padding-top: 7px;
+    padding-top: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .radio__input {
-    padding-top: 7px;
+    padding-top: 0;
   }
 }
 .radio__input input {
@@ -120,6 +116,23 @@ textarea::placeholder {
   line-height: 2.13;
   color: #fdd63e;
 }
+@media (max-width: 767px) {
+  textarea::-webkit-input-placeholder {
+    line-height: 1.13;
+  }
+  textarea::-moz-placeholder {
+    line-height: 1.13;
+  }
+  textarea:-ms-input-placeholder {
+    line-height: 1.13;
+  }
+  textarea::-ms-input-placeholder {
+    line-height: 1.13;
+  }
+  textarea::placeholder {
+    line-height: 1.13;
+  }
+}
 
 .email {
   width: 100%;
@@ -147,10 +160,16 @@ textarea::placeholder {
   -ms-user-select: none;
   user-select: none;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .containerr {
+    margin-top: 72px;
+    margin-bottom: 79px;
+  }
+}
 @media (max-width: 767px) {
   .containerr {
-    margin-top: 70px;
-    margin-bottom: 70px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -162,7 +181,7 @@ textarea::placeholder {
   width: 0;
 }
 
-/* Create a custom checkbox */
+/*Checkbox */
 .checkmark {
   position: absolute;
   top: 2px;
@@ -173,27 +192,22 @@ textarea::placeholder {
   background-color: white;
 }
 
-/* On mouse-over, add a grey background color */
-/* When the checkbox is checked, add a blue background */
 .containerr input:checked ~ .checkmark {
   background-color: #4c4c4e;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
 .containerr input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
 .containerr .checkmark:after {
-  left: 4px;
+  left: 4.5px;
   bottom: 3px;
   width: 7px;
   height: 15px;
@@ -239,7 +253,7 @@ input[type=submit]:checked {
 }
 
 .response-msg-wrapper {
-  width: 521px;
+  width: 100%;
   height: 113px;
   background-color: rgba(33, 229, 3, 0.1);
   font-family: "Roboto", sans-serif;
@@ -372,11 +386,22 @@ input[type=submit]:checked {
           align-items: center;
   gap: 76px;
 }
+@media (max-width: 767px) {
+  .footer__logo {
+    gap: 26px;
+  }
+}
 
 .form {
   max-width: 530px;
   display: block;
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .form {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .form__question {
   font-family: "Bebas Neue", cursive;
@@ -384,6 +409,12 @@ input[type=submit]:checked {
   line-height: 1.13;
   text-align: left;
   color: #eb0a0a;
+}
+@media (max-width: 767px) {
+  .form__question {
+    font-size: 26px;
+    line-height: 29px;
+  }
 }
 .form__question--textarea {
   font-family: "Bebas Neue", cursive;
@@ -406,12 +437,23 @@ input[type=submit]:checked {
   line-height: 1.25;
   color: #eb0a0a;
 }
+@media (max-width: 767px) {
+  .form h4 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
 .form__text {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.75;
   color: #4c4c4e;
   margin-top: 80px;
+}
+@media (max-width: 767px) {
+  .form__text {
+    margin-top: 70px;
+  }
 }
 .form__text span {
   font-weight: bold;
@@ -450,6 +492,16 @@ input[type=submit]:checked {
 .pitanje_6__wrapper {
   margin-top: 80px;
 }
+@media (max-width: 767px) {
+  .pitanje_1__wrapper,
+.pitanje_2__wrapper,
+.pitanje_3__wrapper,
+.pitanje_4__wrapper,
+.pitanje_5__wrapper,
+.pitanje_6__wrapper {
+    margin-top: 70px;
+  }
+}
 
 .header__main-photo {
   position: relative;
@@ -470,6 +522,25 @@ input[type=submit]:checked {
   padding-top: 84px;
   margin-top: -6px;
 }
+@media (min-width: 1025px) and (max-width: 1365px) {
+  .wrapper {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrapper {
+    margin-left: 84px;
+    margin-right: 84px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 70px;
+  }
+}
 .wrapper__text {
   font-family: "Bebas Neue", cursive;
   color: #4c4c4e;
@@ -479,9 +550,31 @@ input[type=submit]:checked {
   font-size: 50px;
   margin-bottom: 28px;
 }
+@media (max-width: 767px) {
+  .wrapper__text h2 {
+    font-size: 40px;
+    line-height: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 .wrapper__text h1 {
   font-size: 30px;
   margin-bottom: 46px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrapper__text h1 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper__text h1 {
+    font-size: 26px;
+    line-height: 38px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 .wrapper__text h1 span {
   border-bottom: 4px solid #fdd63e;
@@ -493,6 +586,28 @@ input[type=submit]:checked {
   padding-left: 150px;
   padding-right: 150px;
   margin-bottom: 124px;
+}
+@media (min-width: 1025px) and (max-width: 1365px) {
+  .wrapper__text p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrapper__text p {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper__text p {
+    font-size: 16px;
+    line-height: 1.63;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 70px;
+  }
 }
 .wrapper__text p span {
   font-weight: bold;
@@ -510,6 +625,11 @@ input[type=submit]:checked {
   height: 110px;
   width: 100%;
   background-color: #fdd63e;
+}
+@media (max-width: 767px) {
+  .rectangle {
+    height: 70px;
+  }
 }
 
 /*

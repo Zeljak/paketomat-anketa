@@ -6,12 +6,22 @@
   display: block;
   margin: 0 auto;
 
+  @include for-phone {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   &__question {
     font-family: $family-primary;
     font-size: 30px;
     line-height: 1.13;
     text-align: left;
     color: $color-red;
+
+    @include for-phone {
+      font-size: 26px;
+      line-height: 29px;
+    }
 
     &--textarea {
       font-family: $family-primary;
@@ -36,6 +46,11 @@
     font-size: 20px;
     line-height: 1.25;
     color: $color-red;
+
+    @include for-phone {
+      font-size: 16px;
+      line-height: 25px;
+    }
   }
 
   &__text {
@@ -44,6 +59,10 @@
     line-height: 1.75;
     color: $color-grey;
     margin-top: 80px;
+
+    @include for-phone {
+      margin-top: 70px;
+    }
 
     span {
       font-weight: bold;
@@ -89,4 +108,8 @@
 .pitanje_5__wrapper,
 .pitanje_6__wrapper {
   margin-top: 80px;
+
+  @include for-phone {
+    margin-top: 70px;
+  }
 }

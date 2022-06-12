@@ -20,5 +20,9 @@
     justify-content: center;
     align-items: center;
     gap: 76px;
+
+    @include for-phone {
+      gap: 26px;
+    }
   }
 }
