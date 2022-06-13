@@ -217,6 +217,10 @@ textarea::placeholder {
   transform: rotate(45deg);
 }
 
+.submit__wrapper {
+  padding-bottom: 80px;
+}
+
 .form__button {
   display: block;
   margin: 80px auto 0;
@@ -236,7 +240,6 @@ textarea::placeholder {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
-  margin-bottom: 80px;
 }
 @media (max-width: 767px) {
   .form__button {
