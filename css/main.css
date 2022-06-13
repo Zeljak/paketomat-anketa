@@ -236,6 +236,10 @@ input[type=submit] {
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
 }
 @media (max-width: 767px) {
   input[type=submit] {

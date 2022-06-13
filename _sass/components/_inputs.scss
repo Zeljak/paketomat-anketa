@@ -181,6 +181,10 @@ input[type="submit"] {
   cursor: pointer;
   transition: all 0.2s;
 
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
   @include for-phone {
     margin-top: 70px;
     width: 128px;
