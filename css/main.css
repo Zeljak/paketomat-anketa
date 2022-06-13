@@ -221,7 +221,7 @@ textarea::placeholder {
   margin-bottom: 80px;
 }
 
-input[type=submit] {
+.form__button {
   display: block;
   margin: 80px auto 0;
   width: 112px;
@@ -242,16 +242,16 @@ input[type=submit] {
        appearance: none;
 }
 @media (max-width: 767px) {
-  input[type=submit] {
+  .form__button {
     margin-top: 70px;
     width: 128px;
   }
 }
-input[type=submit]:hover {
+.form__button:hover {
   background-color: rgba(253, 214, 62, 0.61);
   color: #4c4c4e;
 }
-input[type=submit]:checked {
+.form__button:checked {
   background-color: #deb207;
   color: white;
 }
